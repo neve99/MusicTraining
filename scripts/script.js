@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       button.style.backgroundColor = 'red';
       button.style.color = 'white';
       button.style.border = 'none';
-      button.style.padding = '2px 5px';
+      button.style.padding = '2px 7px';
     });
   });
 });
@@ -62,3 +62,19 @@ document.querySelector('.btn-correct-2').addEventListener('click', function () {
   document.querySelector('.showAnswer-2').style.display = 'block';
 });
 
+//recording button change
+const btnRecord = document.querySelector('.btn-record');
+const btnRecognition = document.querySelector('.btn-recognition');
+document.querySelector('.btn-record').addEventListener('click', function () {
+
+  btnRecord.classList.toggle('btn-stop');
+  btnRecognition.style.display = 'block';
+
+
+  if (btnRecord.textContent === 'Record') {
+    btnRecord.textContent = 'Stop';
+  } else {
+    btnRecord.textContent = 'Record';
+  }
+
+});

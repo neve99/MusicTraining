@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>1st prototype</title>
 
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -13,8 +13,24 @@
   <div class="questionnaire">
 
     <div class="question active" id="q1">
-      <button onclick="nextQuestion('q2')">Record</button>
-      <button>Upload</button>
+      <p>Interface Design first prototype</p>
+      <p>musical ability training</p>
+      <br>
+      <p>Pitch recognition: You can choose to record a short sound, or upload a short audio file</p>
+      <br>
+      <div class="play-option">
+        <button class="btn-record">Record</button>
+        <button class="btn-recognition" onclick="nextQuestion('q2')">Start recognition</button>
+      </div>
+      <br>
+      <div class="play-option">
+        <form action="/action_page.php">
+          <input type="file" id="myFile" name="filename">
+        </form>
+
+        <button onclick="nextQuestion('q2')">Start recognition</button>
+      </div>
+
 
 
     </div>
@@ -37,7 +53,7 @@
 
       <button class="play-sound" data-sound="major3rd-c4-e4">E (Major 3rd)</button>
 
-      <p>Here are some other practices:</p>
+      <p>Here are some practices:</p>
       <button onclick="nextQuestion('q4')">Start</button>
     </div>
 

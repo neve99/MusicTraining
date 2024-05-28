@@ -33,6 +33,7 @@ body {
 button {
   display: block;
   margin-bottom: 10px;
+  margin-right: 5px;
   /* padding: 10px 20px;
   border: none;
   background: #007BFF;
@@ -40,6 +41,7 @@ button {
   cursor: pointer;
   border: 1px solid #767676;
   border-radius: 2px;
+  padding: 2px 7px;
 }
 
 button:hover {
@@ -74,6 +76,13 @@ button:hover {
 }
 
 .showAnswer,
-.showAnswer-2 {
+.showAnswer-2,
+.btn-recognition {
   display: none;
+}
+
+.btn-stop {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
 }
