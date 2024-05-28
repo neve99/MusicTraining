@@ -36,9 +36,10 @@ button {
   /* padding: 10px 20px;
   border: none;
   background: #007BFF;
-  color: white;
-  border-radius: 5px; */
+  color: white; */
   cursor: pointer;
+  border: 1px solid #767676;
+  border-radius: 2px;
 }
 
 button:hover {
@@ -71,3 +72,5 @@ button:hover {
 .img-play {
   width: 8px;
 }
+
+.btn-wrong:cl {}
