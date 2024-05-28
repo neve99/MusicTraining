@@ -48,3 +48,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//show answer
+
+const btnCorrect = document.querySelector('.btn-correct');
+const showAnswer = document.querySelector('.showAnswer');
+
+document.querySelector('.btn-correct').addEventListener('click', function () {
+  showAnswer.style.display = 'block';
+});
+
+document.querySelector('.btn-correct-2').addEventListener('click', function () {
+  document.querySelector('.showAnswer-2').style.display = 'block';
+});
+

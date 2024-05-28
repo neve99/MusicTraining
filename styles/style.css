@@ -73,4 +73,7 @@ button:hover {
   width: 8px;
 }
 
-.btn-wrong:cl {}
+.showAnswer,
+.showAnswer-2 {
+  display: none;
+}

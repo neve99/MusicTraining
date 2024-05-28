@@ -21,9 +21,11 @@
 
     <div class="question" id="q2">
       <p>This is your note:</p>
-      <button class="play-sound" data-sound="e4-1">Play</button>
+      <button class="play-sound btn-play" data-sound="e4-1">
+        <img src="images/img-play.svg" alt="" class="img-play"></button>
       <p>This is the root note C: </p>
-      <button class="play-sound" data-sound="c4-1">Play</button>
+      <button class="play-sound btn-play" data-sound="c4-1">
+        <img src="images/img-play.svg" alt="" class="img-play"></button>
       <p>Can you recognize it now?</p>
       <button onclick="nextQuestion('q3')">E (Major 3rd)</button>
       <button class="btn-wrong">G (Perfect 5th)</button>
@@ -33,7 +35,7 @@
     <div class="question" id="q3">
       <p>You are Right!</p>
 
-      <button class="play-sound" data-sound="c4-1">E (Major 3rd)</button>
+      <button class="play-sound" data-sound="major3rd-c4-e4">E (Major 3rd)</button>
 
       <p>Here are some other practices:</p>
       <button onclick="nextQuestion('q4')">Start</button>
@@ -43,35 +45,30 @@
       <p>Which one is not Major 3rd?</p>
 
       <div class="play-option">
-        <button class="play-sound btn-play"><img src="images/img-play.svg" alt="" class="img-play"> </button>
-        <button>Choose option 1</button>
+        <button class="play-sound btn-play" data-sound="major3rd-c4-e4">
+          <img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button class="btn-wrong">Choose option 1</button>
       </div>
 
-      <div>
-        <button>2</button>
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="major3rd-c5-e5">
+          <img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button class="btn-wrong">Choose option 2</button>
       </div>
 
-      <div>
-        <button>3</button>
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="perfect5th-c4-g4"><img src="images/img-play.svg" alt=""
+            class="img-play"> </button>
+        <button class="btn-correct">Choose option 3</button>
       </div>
 
-      <div>
-        <button>4</button>
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="major3rd-c2-e2"><img src="images/img-play.svg" alt=""
+            class="img-play"> </button>
+        <button class="btn-wrong">Choose option 4</button>
       </div>
-      <button>4</button>
 
-      <div class="showAnswer">
-        <p>You are right!</p>
-        <button onclick="nextQuestion('q4')">Continue</button>
-      </div>
-    </div>
 
-    <div class="question" id="q4">
-      Which one is Major 3rd?
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
 
       <div class="showAnswer">
         <p>You are right!</p>
@@ -80,10 +77,44 @@
     </div>
 
     <div class="question" id="q5">
+      <p>Which one is Major 3rd?</p>
+
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="perfect5th-c4-g4">
+          <img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button class="btn-wrong">Choose option 1</button>
+      </div>
+
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="major3rd-c3-e3">
+          <img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button class="btn-correct-2">Choose option 2</button>
+      </div>
+
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="octave-c4-c5"><img src="images/img-play.svg" alt=""
+            class="img-play"> </button>
+        <button class="btn-wrong">Choose option 3</button>
+      </div>
+
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="others-c5-a5"><img src="images/img-play.svg" alt=""
+            class="img-play"> </button>
+        <button class="btn-wrong">Choose option 4</button>
+      </div>
+      <div class="showAnswer-2">
+        <p>You are right!</p>
+        <button onclick="nextQuestion('q6')">Continue</button>
+      </div>
+    </div>
+
+    <div class="question" id="q6">
       <p>"Major 3rd" is in the Archive now!</p>
-      <button>Major 3rd</button>
-      <button>Perfect 5th</button>
-      <button></button>
+      <div class="play-option">
+        <button class="play-sound btn-play" data-sound="major3rd-c4-e4">
+          <img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button>Major 3rd</button>
+      </div>
 
     </div>
   </div>
