@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="questionnaire">
+
+    <div class="question active" id="q1">
+      <button onclick="nextQuestion('q2')">Record</button>
+      <button>Upload</button>
+
+
+    </div>
+
+    <div class="question" id="q2">
+      <p>This is your note:</p>
+      <button class="play-sound" data-sound="e4-1">Play</button>
+      <p>This is the root note C: </p>
+      <button class="play-sound" data-sound="c4-1">Play</button>
+      <p>Can you recognize it now?</p>
+      <button onclick="nextQuestion('q3')">E (Major 3rd)</button>
+      <button>G (Perfect 5th)</button>
+      <button>C (Octave)</button>
+    </div>
+
+    <div class="question" id="q3">
+      <p>You are Right!</p>
+
+      <button>E (Major 3rd)</button>
+
+      <p>Here are some other practices:</p>
+      <button onclick="nextQuestion('q4')">Start</button>
+    </div>
+
+    <div class=" question" id="q4">
+      <p>Which one is not Major 3rd?</p>
+
+      <div class="play-option">
+        <button class="play-sound btn-play"><img src="images/img-play.svg" alt="" class="img-play"> </button>
+        <button>Choose option 1</button>
+      </div>
+
+      <div>
+        <button>2</button>
+      </div>
+
+      <div>
+        <button>3</button>
+      </div>
+
+      <div>
+        <button>4</button>
+      </div>
+      <button>4</button>
+
+      <div class="showAnswer">
+        <p>You are right!</p>
+        <button onclick="nextQuestion('q4')">Continue</button>
+      </div>
+    </div>
+
+    <div class="question" id="q4">
+      Which one is Major 3rd?
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+
+      <div class="showAnswer">
+        <p>You are right!</p>
+        <button onclick="nextQuestion('q5')">Continue</button>
+      </div>
+    </div>
+
+    <div class="question" id="q5">
+      <p>"Major 3rd" is in the Archive now!</p>
+      <button>Major 3rd</button>
+      <button>Perfect 5th</button>
+      <button></button>
+
+    </div>
+  </div>
+
+  <audio id="c4-1" src="audios/c4-100.mp3"></audio>
+  <audio id="e4-1" src="audios/e4-100.mp3"></audio>
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
